@@ -1,0 +1,241 @@
+/*通配符*/
+*{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+input{
+	outline: none;
+}
+/*移动端按钮高亮显示  transparent全透明  alpha*/
+button{
+	-webkit-tap-highlight-color:rgba( 0, 0, 0, 0.5);
+}
+body{
+	font-family:sans-serif;
+	background-color: #eae3e3;
+
+}
+.clearfix{
+	clear: both;
+}
+/*start nav*/
+.navigater-wrapper{
+	width:100%;
+	height:142px;
+	background-color: #fff;
+}
+.navigater-wrapper .navigater{
+	width: 1200px;
+	height:142px;
+	margin:0px auto;
+}
+.navigater-wrapper .navigater .navigater-top{
+	width: 1200px;
+	height:90px;
+	background-color: #fff;
+}
+.navigater-top .logo{
+	cursor: pointer;
+	margin:22px 20px 22px 0px;
+	float: left;
+	height:46px;
+	width: 170px;
+}
+.navigater-top .nav-list{
+	float:left;
+
+}
+.navigater-top .nav-list .nav-item{
+	float:left;
+	width: 80px;
+	height: 90px;
+	margin-right: 20px;
+}
+/*用伪类解决*/
+.navigater-top .nav-list .nav-item .nav-link{
+	display: inline-block;
+	cursor: pointer;
+	width: 90px;
+	height:90px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 18px;
+	color: #000;
+}
+.navigater-top .nav-list .nav-item .nav-link:hover{
+	color: #31c27c;
+}
+.navigater-top .nav-list .nav-item .nav-link-first{
+	background-color: #31c27c;
+	display: inline-block;
+	cursor: pointer;
+	width: 100px;
+	height:90px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+}
+/*navigater end*/
+/*start login-wrapper*/
+.login-wrapper{
+	float: right;
+}
+.login-wrapper .input{
+	width: 174px;
+	height: 36px;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px;
+	margin-top: 26px;
+	margin-right: 10px;
+}
+.login-wrapper .fl{
+	float: left;
+	
+}
+.login-wrapper .login{
+	
+	width: 50px;
+	color: #000;
+	line-height: 90px;
+	text-align: center;
+	margin-right: 10px;
+	font-size: 16px;
+}
+.login-wrapper .vip{
+	line-height: 90px;
+	margin-right: 10px;
+}
+.login-wrapper .vip a{
+	background-color: #31c27c;
+	font-size: 13px;
+	color: #fff;
+	padding: 10px;
+	border-radius: 2px;
+}
+.login-wrapper .pay{
+	line-height: 90px;
+}
+.login-wrapper .pay a{
+	font-size: 13px;
+	color: #000;
+	padding: 10px;
+	border:1px solid #c9c9c9;
+	border-radius: 2px;
+}
+/*end login-wrapper*/
+/*start navigater-bottom*/
+.navigater-bottom{
+	width: 1250px;
+	height: 51px;
+}
+.navigater-bottom .navigater-bottom-item{
+	border-top: 1px solid #f2f2f2;
+	padding-left: 230px;
+}
+.navigater-bottom .navigater-bottom-item .navigater-bottom-item-unit{
+	display: inline-block; 
+	height: 51px;
+	line-height: 51px;
+}
+
+.navigater-bottom .navigater-bottom-item .navigater-bottom-item-unit a{
+	color: #000;
+	font-size: 15px;
+	margin-right: 47px;
+}
+.navigater-bottom .navigater-bottom-item .navigater-bottom-item-unit.navigater-bottom-item-unit-active a{
+	color: #31c27c;
+}
+.navigater-bottom .navigater-bottom-item .navigater-bottom-item-unit a:hover{
+	color: #31c27c;
+}
+/*recommend start*/
+.recommend-wrapper{
+	width: 100%;
+	margin-top: 50px;
+	min-width: 1200px;
+}
+.recommend-wrapper .recommend-list-wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+.recommend-wrapper .recommend-title{
+	cursor: pointer;
+	font-size: 30px;
+	color: #3d3d3d;
+	text-align: center;
+	letter-spacing: 18px;
+	font-weight: 600;
+	margin-bottom: 30px;
+
+}
+.recommend-wrapper .recommend-list{
+
+	width: 1200px;
+	margin: 0 auto 30px;
+}
+.recommend-wrapper .recommend-list .recommend-list-unit {
+	text-align: center;
+}
+.recommend-list-unit .recommend-item{
+	display: inline-block;
+}
+.recommend-list-unit .recommend-item a{
+	color: #333;
+	font-size: 15px;
+	margin: 0 24px;
+	cursor: pointer;
+}
+.recommend-list-unit .recommend-item.recommend-item-active a{
+	color: #31c27c;
+}
+.recommend-list-unit .recommend-item a:hover{
+	color: #31c27c;
+}
+
+.recommend-content .recommend-content-list{
+
+}
+.recommend-content .recommend-content-list .recommend-content-item{
+	width: 224px;
+	display: inline-block;
+	float: left;
+	margin-right: 16px;
+}
+.recommend-content-list .recommend-content-item .recommend-content-image img{
+	width: 224px;
+	height: 224px;
+	cursor: pointer;
+}
+/*页面中的图片是一定要给宽高的，防止浏览器在渲染图片时回排和回流*/
+.recommend-content-list .recommend-content-item .recommend-content-image{
+	margin-bottom: 10px;
+}
+.recommend-content-item .recommend-content-image:hover .recommend-content-image img{
+	height: 226px;
+	width: 226px;
+}
+.recommend-content-item .recommend-content-des{
+	width: 224px;
+}
+.recommend-content-item .recommend-content-des .recommend-content-title{
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+	line-height: 22px;
+	cursor: pointer;
+}
+
+.recommend-content-item .recommend-content-des .recommend-content-detail{
+	font-size: 14px;
+	color: #999;
+	line-height: 22px;
+	cursor: pointer;
+}
